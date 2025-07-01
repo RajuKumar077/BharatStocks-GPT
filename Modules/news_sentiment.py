@@ -21,7 +21,7 @@ def fetch_news_articles(company_name, news_api_key, total_articles=50):
     articles = []
     page = 1
     page_size = 20
-    # Limiting pages to 5 to avoid excessive API calls
+    # Limiting Modules to 5 to avoid excessive API calls
     while len(articles) < total_articles and page <= 5:
         url = (
             f"https://newsapi.org/v2/everything?q={company_name}&language=en"

@@ -5,12 +5,12 @@ import warnings
 import time
 
 # Import functions from your separate modules
-import pages.yahoo_autocomplete as yahoo_autocomplete
-import pages.stock_summary as stock_summary
-import pages.financials as financials
-import pages.probabilistic_stock_model as probabilistic_stock_model
-import pages.forecast_module as forecast_module
-import pages.news_sentiment as news_sentiment  # Make sure NEWS_API_KEY is defined here or passed
+import Modules.yahoo_autocomplete as yahoo_autocomplete
+import Modules.stock_summary as stock_summary
+import Modules.financials as financials
+import Modules.probabilistic_stock_model as probabilistic_stock_model
+import Modules.forecast_module as forecast_module
+import Modules.news_sentiment as news_sentiment  # Make sure NEWS_API_KEY is defined here or passed
 
 warnings.filterwarnings('ignore')  # Suppress warnings for cleaner output
 
