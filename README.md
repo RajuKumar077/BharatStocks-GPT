@@ -72,7 +72,6 @@ pip install -r requirements.txt
 
 Open `app.py` and update the placeholder keys with your actual API credentials:
 
-[[[
 # API Keys
 NEWS_API_KEY = "YOUR_NEWSAPI_KEY"
 FMP_API_KEY = "YOUR_FMP_KEY"
@@ -151,36 +150,3 @@ git push origin feature/YourFeature
 ]]]
 
 ---
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgements
-
-- **Streamlit** — for the intuitive UI framework  
-- **API Providers** — FMP, Alpha Vantage, NewsAPI, and Google Gemini  
-- **Python Open Source Community** — for libraries like Pandas, Scikit-learn, Plotly
-
----
-
-## 📽️ Demo Video
-
-Click below to watch the walkthrough:  
-🎥 [Watch BharatStocks-GPT Demo](https://drive.google.com/file/d/1JFChik9gNpGo1pA6Icn_Y6cOlDoKBtYh/view?usp=sharing)
-
----
-
-> Made with 💼 by [Raju Kumar](https://github.com/RajuKumar077)
-"""
-
-# Replace custom markers with triple backticks for code blocks
-readme_content = readme_content.replace("[[[", "```").replace("]]]", "```")
-
-# Save to README.md
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content.strip())
-
-readme_path
